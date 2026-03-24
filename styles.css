@@ -104,6 +104,7 @@ a {
     border: none;
     padding: 10px 20px;
     margin-right: 10px;
+    margin-left: 20px;
     cursor: pointer;
     border-radius: 15px;
 }
@@ -118,3 +119,38 @@ a {
     cursor: pointer;
     border-radius: 15px;
 }
+
+.caixa-dos-cards-sessao01 {
+    display: block;
+    text-align: center;
+    margin-top: 55px;
+}
+.card-sessao01 {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: top;
+    width: 250px;
+    height: 120px;
+    border: 1px solid #d11717;
+    box-shadow: 0 0 5px red, 0 0 10px red;
+    margin-right: 10px;
+    
+
+}
+
+.h2-sessao01 {
+    color: #d11717;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
+.p-sessao01 {
+    color: #ffffff;
+    font-size: 16px;
+    
+}
+
+
