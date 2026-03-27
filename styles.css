@@ -156,7 +156,7 @@ a {
 
 .sessao02{
     background-color: #04235a;
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     display: block;
     text-align: center;
@@ -164,9 +164,10 @@ a {
 
 .sessao02-H2 {
     color: #ffffff;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     
 }
 
@@ -177,7 +178,7 @@ a {
 .p-sessao02 {
     color: #ffffff;
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     
 }
 
@@ -187,13 +188,13 @@ a {
     border-radius: 15px;
     text-align: center;
     vertical-align: top;
-    width: 200px;
+    width: 400px;
     height: 200px;
     border: 1px solid #d11717;
     box-shadow: 0 0 5px red, 0 0 10px red;
     margin-right: 30px;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-left: 15px;
 
 }
@@ -208,7 +209,7 @@ a {
     height: 150px;
     border: 1px solid #d11717;
     box-shadow: 0 0 5px red, 0 0 10px red;
-    margin-top: 30px;
+    margin-top: 50px;
 
 }
 
