@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 header {
@@ -152,5 +153,72 @@ a {
     font-size: 16px;
     
 }
+
+.sessao02{
+    background-color: #04235a;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.sessao02-H2 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+.sec02-h2 {
+    color: #d11717;
+}
+
+.p-sessao02 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 25px;
+    
+}
+
+.card-sessao02 {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #d11717;
+    box-shadow: 0 0 5px red, 0 0 10px red;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+
+}
+
+.card-sessao02-rodape {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: top;
+    width: 1400px;
+    height: 150px;
+    border: 1px solid #d11717;
+    box-shadow: 0 0 5px red, 0 0 10px red;
+    margin-top: 30px;
+
+}
+
+.card-sec02-h2 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+
+
 
 
