@@ -206,20 +206,58 @@ a {
     text-align: center;
     vertical-align: top;
     width: 1400px;
-    height: 150px;
+    height: 250px;
     border: 1px solid #d11717;
     box-shadow: 0 0 5px red, 0 0 10px red;
     margin-top: 50px;
 
 }
 
+
 .card-sec02-h2 {
-    color: #ffffff;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
+    margin-top: 25px;
+    
+}   
+
+.card-sec02-h3 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
     
 }
 
+.p-sec02 {
+    color: #ffffffc4;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.card-sec2-rodape {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    
+}
+
+.card-sec2-rodape-button {
+    background-color: #d11717;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+}
 
 
 
