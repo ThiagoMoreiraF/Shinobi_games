@@ -393,14 +393,14 @@ a {
 
 .caixaML-sec04 {
     display: inline-block;
-    background-color: rgba(211, 242, 11, 0.471);
+    background-color: rgba(52, 44, 32, 0.471);
     border-radius: 15px;
     text-align: center;
     vertical-align: top;
     width: 600px;
     height: 250px;
-    border: 1px solid #d11717;
-    box-shadow: 0 0 5px red, 0 0 10px red;
+    border: 1px solid #b3d11a;
+    box-shadow: 0 0 5px rgb(238, 255, 0), 0 0 10px rgb(149, 255, 0);
     margin-top: 30px;
 }
 
@@ -408,6 +408,10 @@ a {
     display: inline-block;
     width: 55%;
     vertical-align: top;
+}
+
+.amareloML-titulo {
+    color: #F0B100;
 }
 
 .h2-sec04 {
@@ -418,8 +422,8 @@ a {
 }
 
 .p-sec04 {
-    color: #ffffff;
-    font-size: 20px;
+    color: #ffffffc4;
+    font-size: 25px;
     margin-bottom: 30px;
 }
 
@@ -432,4 +436,13 @@ a {
     padding-left: 20px;
     margin-left: 30px;
     text-align: left;
+    line-height: 40px;
 }
+
+
+.ul-sec04 li::marker {
+    color: red;
+    content: url();
+}
+
+
