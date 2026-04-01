@@ -383,4 +383,53 @@ a {
 
 /* quarta sessão*/
 
+.sessao04 {
+    background-color: #04235a;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
 
+.caixaML-sec04 {
+    display: inline-block;
+    background-color: rgba(211, 242, 11, 0.471);
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: top;
+    width: 600px;
+    height: 250px;
+    border: 1px solid #d11717;
+    box-shadow: 0 0 5px red, 0 0 10px red;
+    margin-top: 30px;
+}
+
+.TEXTO{
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+}
+
+.h2-sec04 {
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.p-sec04 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.ul-sec04 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-position: inside;
+    padding-left: 20px;
+    margin-left: 30px;
+    text-align: left;
+}
