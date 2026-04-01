@@ -391,6 +391,13 @@ a {
     text-align: center;
 }
 
+.h3-caixaML-sec04 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
 .caixaML-sec04 {
     display: inline-block;
     background-color: rgba(52, 44, 32, 0.471);
@@ -460,5 +467,82 @@ a {
     width: 500px;
     height: 100px;
 }
+
+.p-caixaML-sec04 {
+    color: #ffffffc4;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.enviosML {
+    color: #ffffffc4;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    font-weight: bold;
+    display: inline-block;
+    align-items: center;
+}
+
+.p-enviosML {
+    color: #ffffffc4;
+    font-size: 20px;
+    margin-top: 100px;
+    font-weight: bold;
+    display: inline-block;
+    align-items: center;
+}
+
+.p-retiradaML {
+    color: #ffffffc4;
+    font-size: 20px;
+    margin-top: 100px;
+    font-weight: bold;
+    display: inline-block;
+    align-items: center;
+}
+
+.incon-sec04 {
+    display: inline;
+}
+
+.RetiradaML {
+    color: #ffffffc4;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: inline-block;
+    align-items: center;
+}
+
+.atendimentoML {
+    color: #ffffff;
+    background-color: rgba(234, 158, 5, 0.6);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 180px;
+    width: 250px;
+    border-radius: 15px;
+    font-weight: bold;
+    align-items: center;
+}
+
+/* quinta sessão*/
 
 
