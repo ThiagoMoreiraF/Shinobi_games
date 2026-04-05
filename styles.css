@@ -667,7 +667,7 @@ a {
 .section_06 {
     background-color: #101828;
     background-size: cover;
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     display: block;
     text-align: center;
@@ -677,18 +677,86 @@ a {
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     margin-top: 100px;
-    margin-left: 600px;
+    margin-left: 300px;
+    align-items: center;
 
 }
 
 .img_loja_sec_06 {
-    width: 400px;
-    height: 250px;
+    width: 500px;
+    height: 400px;
     border-radius: 15px;
-    margin-top: 100px;
+    margin-top: 300px;
     vertical-align: top;
     display: inline-block;
+}
+
+.P_sec06 {
+    color: #ffffffc4;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.h2_sec06 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.h3_sec06 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.red-sec06-titulo {
+    color: #E7000B;
+}
+
+.card-sec06 {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: top;
+    width: 175px;
+    height: 150px;
+    border: 1px solid #d11717;
+    box-shadow: 0 0 5px red, 0 0 10px red;
+    margin-right: 20px;
+    margin-left: 3px;
+}
+
+
+.card3-sec06-minifooter {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: top;
+    width: 395px;
+    height: 150px;
+    border: 1px solid #d11717;
+    box-shadow: 0 0 5px red, 0 0 10px red;
+    margin-top: 50px;
+}
+
+.a_sec06{
+    background-color: #d11717;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    width: 200px;
 }
