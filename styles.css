@@ -800,7 +800,7 @@ a {
     color: #ffffff;
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .vermelho-sec_07 {
@@ -824,9 +824,10 @@ a {
     margin-right: 30px;
     border-radius: 15px;
     align-items: center;
-    border: 1px solid #d11717;
-    box-shadow: 0 0 5px red, 0 0 10px red;
+    border: 1px solid #162030;
+
     vertical-align: top;
+    background-color: #162030;
 }
 
 .Iframe_MAPA {
@@ -879,4 +880,26 @@ a {
     margin-top: 20px;
     margin-bottom: 10px;
     width: 200px;
+}
+
+.mini_footer_sec07 {
+    display: inline-block;
+    background-color: rgba(28, 39, 55, 0.6);
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: top;
+    width: 95%;
+    height: 350px;
+    border: 1px solid #d11717;
+    box-shadow: 0 0 5px red, 0 0 10px red;
+    margin-top: 50px;
+}
+
+.minifooter_colunas {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 20px;
+    border: none;
+    margin-top: 95px;
 }
