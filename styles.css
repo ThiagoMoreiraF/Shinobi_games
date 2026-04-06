@@ -763,3 +763,120 @@ a {
     margin-bottom: 10px;
     width: 200px;
 }
+
+/*setima sessão*/
+
+.sessao07 {
+    background-color: #010101;
+    background-size: cover;
+    height: 250vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.iframe_sec_07 {
+    margin-top: 140px;
+    border: 1px solid #d11717;
+    box-shadow: 0 0 5px red, 0 0 10px red;
+    border-radius: 15px;
+    width:510px ;
+    height: 450px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+
+.h2-sec_07 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    
+}
+
+.h3-sec_07 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.vermelho-sec_07 {
+    color: #E7000B;
+}
+
+.p-sec_07 {
+    color: #ffffffc4;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.caixinha_sec_07 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    margin-right: 30px;
+    border-radius: 15px;
+    align-items: center;
+    border: 1px solid #d11717;
+    box-shadow: 0 0 5px red, 0 0 10px red;
+    vertical-align: top;
+}
+
+.Iframe_MAPA {
+    display: block;
+    margin-top: 90px;
+    height: 100vh;
+    width: 100%;
+    border: 1px solid #d11717;
+    box-shadow: 0 0 5px red, 0 0 10px red;
+    border-radius: 15px;
+
+}
+
+.sidecard_sec07 {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    align-items: center;
+    vertical-align: top;
+    width: 500px;
+    height: 450px;
+    border: solid #d11717;
+    margin-top: 140px;
+    margin-left: 220px;
+}
+.h2_sidecard {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 40px; 
+    margin-bottom: 40px;
+}
+
+.p_sidecard {
+    color: #ffffffc4;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.button-sec_07 {
+    background-color: #d11717;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+}
