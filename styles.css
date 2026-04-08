@@ -1,4 +1,4 @@
-/* Ajustes para responsividade e design moderno */
+/* Design moderno e sofisticado para loja de games */
 
 /* Configurações globais */
 * {
@@ -7,154 +7,315 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
     line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 /* Header */
 header {
-    background-color: #000;
-    height: auto;
-    padding: 10px 20px;
-    border-bottom: 2px solid #d11717;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    padding: 20px 40px;
+    border-bottom: 2px solid #ff1744;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 4px 20px rgba(255, 23, 68, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .caixa-logo-header {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 .logo-header {
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease;
+}
+
+.logo-header:hover {
+    transform: scale(1.1);
+}
+
+.logo-texto {
+    display: flex;
+    flex-direction: column;
 }
 
 .logo-h3 {
-    color: #fff;
+    color: #ff1744;
     font-size: 24px;
+    font-weight: 700;
 }
 
 .logo-paragrafo {
-    color: #d11717;
-    font-size: 14px;
+    color: #b0b0b0;
+    font-size: 13px;
+    margin-top: 2px;
 }
 
 .header-menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 25px;
 }
 
 .header-menu a {
-    color: #ffffffca;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.header-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff1744;
+    transition: width 0.3s ease;
+}
+
+.header-menu a:hover::after {
+    width: 100%;
 }
 
 .header-menu a:hover {
-    color: #fff;
+    color: #ff1744;
 }
 
-/* Sessão 01 */
+/* Sessão 01 - Hero */
 .sessao01 {
-    background-image: url(./assets/img/Woman_playing_video_202603221151.jpeg);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(255, 23, 68, 0.1) 100%), url(./assets/img/Woman_playing_video_202603221151.jpeg);
     background-size: cover;
     background-position: center;
-    height: 85vh;
+    background-attachment: fixed;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.sessao01::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255, 23, 68, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.sessao01 > * {
+    position: relative;
+    z-index: 1;
 }
 
 .sessao01-h1 {
-    color: #d11717;
-    font-size: 2.5rem;
-    font-weight: bold;
+    color: #ff1744;
+    font-size: clamp(2rem, 8vw, 4rem);
+    font-weight: 900;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    margin-bottom: 15px;
+    animation: slideInDown 0.8s ease-out;
 }
 
 .sessao01-h2 {
-    color: #fff;
-    font-size: 2rem;
-    margin: 10px 0;
+    color: #ffffff;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    animation: slideInUp 0.8s ease-out 0.2s both;
 }
 
 .sessao01-p {
-    color: #fff;
-    font-size: 1rem;
-    margin-bottom: 20px;
+    color: #e0e0e0;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    max-width: 600px;
+    margin-bottom: 30px;
+    animation: fadeIn 0.8s ease-out 0.4s both;
 }
 
 .sessao01-button1, .sessao01-button2 {
-    background-color: #d11717;
+    background: linear-gradient(135deg, #ff1744 0%, #f50057 100%);
     color: #fff;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 600;
     border: none;
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 14px 35px;
+    margin: 8px;
     cursor: pointer;
-    border-radius: 15px;
-    transition: background-color 0.3s;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 23, 68, 0.3);
+    animation: fadeIn 0.8s ease-out 0.6s both;
 }
 
 .sessao01-button2 {
-    background-color: #4cd117;
+    background: linear-gradient(135deg, #00c853 0%, #00aa47 100%);
+    box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
 }
 
 .sessao01-button1:hover, .sessao01-button2:hover {
-    background-color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 23, 68, 0.5);
 }
 
 .caixa-dos-cards-sessao01 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
+    gap: 20px;
+    margin-top: 50px;
+    animation: fadeIn 0.8s ease-out 0.8s both;
 }
 
 .card-sessao01 {
-    background-color: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%);
     border-radius: 15px;
     text-align: center;
     width: 200px;
-    padding: 20px;
-    border: 1px solid #d11717;
-    box-shadow: 0 0 5px red, 0 0 10px red;
-    transition: transform 0.3s;
+    padding: 25px 20px;
+    border: 1px solid rgba(255, 23, 68, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .card-sessao01:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    border-color: #ff1744;
+    box-shadow: 0 12px 35px rgba(255, 23, 68, 0.4);
 }
 
 .h2-sessao01 {
-    color: #d11717;
-    font-size: 1.5rem;
+    color: #ff1744;
+    font-size: 2rem;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .p-sessao01 {
-    color: #fff;
-    font-size: 1rem;
+    color: #b0b0b0;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%);
+    padding: 50px 40px 20px;
+    border-top: 2px solid #ff1744;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    box-shadow: 0 -4px 20px rgba(255, 23, 68, 0.1);
+}
+
+.caixas_footer {
+    width: 280px;
+    text-align: left;
+}
+
+.H3_footer {
+    color: #ff1744;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.P_footer {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.a_footer {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.a_footer:hover {
+    color: #ff1744;
+}
+
+/* Animações */
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
     .header-menu {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
     .sessao01-h1 {
@@ -162,10 +323,749 @@ header {
     }
 
     .sessao01-h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .card-sessao01 {
-        width: 150px;
+        width: 160px;
     }
+
+    .sessao02, .sessao03, .sessao04, .sessao05, .section_06, .sessao07 {
+        padding: 50px 20px;
+    }
+
+    .card-sessao02, .card-sessao03 {
+        width: 250px;
+    }
+
+    .sessao04, .caixa_sec05 {
+        flex-direction: column;
+    }
+
+    .TEXTO, .caixinha_esquerda_sec05 {
+        text-align: center;
+    }
+
+    .ul-sec04 {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .caixas_footer {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo-header {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-h3 {
+        font-size: 20px;
+    }
+
+    .sessao01-h1 {
+        font-size: 1.5rem;
+    }
+
+    .sessao02-H2, .sessao03-h2, .h2-sec04, .h2-sec05, .h2_sec06, .h2-sec_07 {
+        font-size: 1.8rem;
+    }
+
+    .card-sessao02, .card-sessao03 {
+        width: 100%;
+    }
+
+    .card-sessao01 {
+        width: 100%;
+    }
+}
+
+/* Sessão 02 - Catálogo de Games */
+.sessao02 {
+    background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 100%);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.sessao02-H2 {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.sec02-h2 {
+    color: #ff1744;
+}
+
+.p-sessao02 {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+.card-sessao02 {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 20px;
+    text-align: center;
+    width: 280px;
+    padding: 30px 20px;
+    margin: 15px;
+    border: 1px solid rgba(255, 23, 68, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.card-sessao02:hover {
+    transform: translateY(-10px);
+    border-color: #ff1744;
+    box-shadow: 0 15px 40px rgba(255, 23, 68, 0.3);
+}
+
+.card-sec02-h2 {
+    font-size: 2.5rem;
+    color: #ff1744;
+    margin-bottom: 10px;
+}
+
+.card-sec02-h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.p-sec02 {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.card-sessao02-rodape {
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 50px;
+    border: 1px solid rgba(255, 23, 68, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.card-sec2-rodape {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.card-sec2-rodape-button {
+    background: linear-gradient(135deg, #ff1744 0%, #f50057 100%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(255, 23, 68, 0.3);
+}
+
+.card-sec2-rodape-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 23, 68, 0.5);
+}
+
+/* Sessão 03 - Assistência Técnica */
+.sessao03 {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.sessao03-h2 {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.p-sessao03 {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+.card-sessao03 {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 20px;
+    text-align: left;
+    width: 320px;
+    padding: 30px;
+    margin: 15px;
+    border: 1px solid rgba(255, 23, 68, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.card-sessao03:hover {
+    transform: translateY(-10px);
+    border-color: #ff1744;
+    box-shadow: 0 15px 40px rgba(255, 23, 68, 0.3);
+}
+
+.h3card-sec03 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.pcard-sec03 {
+    color: #b0b0b0;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.ul-sec03 {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    text-align: left;
+    margin: 15px 0;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.ul-sec03 li {
+    margin-bottom: 10px;
+}
+
+.ul-sec03 li::marker {
+    color: #ff1744;
+    font-weight: 600;
+}
+
+.card-sessao03-rodape {
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%);
+    border-radius: 20px;
+    padding: 50px 40px;
+    margin-top: 50px;
+    border: 1px solid rgba(255, 23, 68, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.h2-rodape-sec3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.p-rodape-sec3 {
+    color: #b0b0b0;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.button-rodape-sec3 {
+    background: linear-gradient(135deg, #ff1744 0%, #f50057 100%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 23, 68, 0.3);
+}
+
+.button-rodape-sec3:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 23, 68, 0.5);
+}
+
+/* Sessão 04 - Mercado Livre */
+.sessao04 {
+    background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 100%);
+    padding: 80px 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.TEXTO {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.h2-sec04 {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.amareloML-titulo {
+    color: #ffc107;
+}
+
+.p-sec04 {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.ul-sec04 {
+    color: #b0b0b0;
+    font-size: 1rem;
+    margin: 20px 0;
+    padding-left: 25px;
+    line-height: 2;
+}
+
+.ul-sec04 li::marker {
+    color: #ff1744;
+    font-weight: 600;
+}
+
+.button-sec04 {
+    background: linear-gradient(135deg, #ff1744 0%, #f50057 100%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 12px 35px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(255, 23, 68, 0.3);
+}
+
+.button-sec04:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 23, 68, 0.5);
+}
+
+.caixaML-sec04 {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: 20px;
+    padding: 40px;
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid rgba(255, 193, 7, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.h3-caixaML-sec04 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.p-caixaML-sec04 {
+    color: #b0b0b0;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.enviosML, .RetiradaML {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.p-enviosML, .p-retiradaML {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.atendimentoML {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+    color: #ffc107;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* Sessão 05 - Shopee */
+.sessao05 {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.caixa_sec05 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.caixinha_esquerda_sec05 {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.h2-sec05 {
+    color: #ffffff;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.laranjaShopee-titulo {
+    color: #ff6d00;
+}
+
+.h3-sec05 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.button-sec05 {
+    background: linear-gradient(135deg, #ff6d00 0%, #ff5722 100%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 12px 35px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    box-shadow: 0 4px 15px rgba(255, 109, 0, 0.3);
+}
+
+.button-sec05:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 109, 0, 0.5);
+}
+
+.caixinha_mini_shope {
+    background: linear-gradient(135deg, rgba(255, 109, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: 20px;
+    padding: 40px;
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid rgba(255, 109, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.h3-sec05-caixinha {
+    color: #ff6d00;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.p-sec05-caixinha {
+    color: #b0b0b0;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.button-shope-caixinha {
+    background: linear-gradient(135deg, #ff6d00 0%, #ff5722 100%);
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(255, 109, 0, 0.3);
+}
+
+.button-shope-caixinha:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 109, 0, 0.5);
+}
+
+/* Sessão 06 - Loja Física */
+.section_06 {
+    background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 100%);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.img_loja_sec_06 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    border: 2px solid rgba(255, 23, 68, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.img_loja_sec_06:hover {
+    transform: scale(1.05);
+}
+
+.h2_sec06 {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.red-sec06-titulo {
+    color: #ff1744;
+}
+
+.P_sec06 {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.8;
+}
+
+.card-sec06 {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 20px;
+    text-align: center;
+    width: 220px;
+    padding: 25px;
+    margin: 15px;
+    border: 1px solid rgba(255, 23, 68, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.card-sec06:hover {
+    transform: translateY(-10px);
+    border-color: #ff1744;
+    box-shadow: 0 15px 40px rgba(255, 23, 68, 0.3);
+}
+
+.h3_sec06 {
+    color: #ff1744;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card3-sec06-minifooter {
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.15) 0%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border: 1px solid rgba(255, 23, 68, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    font-style: italic;
+}
+
+.a_sec06 {
+    background: linear-gradient(135deg, #ff1744 0%, #f50057 100%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 23, 68, 0.3);
+}
+
+.a_sec06:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 23, 68, 0.5);
+}
+
+/* Sessão 07 - Contato e Mapa */
+.sessao07 {
+    background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.h2-sec_07 {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.vermelho-sec_07 {
+    color: #ff1744;
+}
+
+.p-sec_07 {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+.caixinha_sec_07 {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 20px;
+    padding: 28px 25px;
+    margin: 15px;
+    width: 240px;
+    border: 1px solid rgba(255, 23, 68, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.caixinha_sec_07:hover {
+    transform: translateY(-10px);
+    border-color: #ff1744;
+    box-shadow: 0 15px 40px rgba(255, 23, 68, 0.3);
+}
+
+.h3-sec_07 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.Iframe_MAPA {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.iframe_sec_07 {
+    border: 2px solid rgba(255, 23, 68, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    transition: transform 0.3s ease;
+}
+
+.iframe_sec_07:hover {
+    transform: scale(1.02);
+}
+
+.sidecard_sec07 {
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid rgba(255, 23, 68, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.h2_sidecard {
+    color: #ff1744;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.p_sidecard {
+    color: #b0b0b0;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.button-sec_07 {
+    background: linear-gradient(135deg, #ff1744 0%, #f50057 100%);
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-top: 12px;
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 23, 68, 0.3);
+}
+
+.button-sec_07:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 23, 68, 0.5);
+}
+
+.mini_footer_sec07 {
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 60px;
+    border: 1px solid rgba(255, 23, 68, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.minifooter_colunas {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
 }
