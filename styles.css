@@ -970,3 +970,228 @@ footer {
     color: #DC272F;
 }
 
+/* 📱 RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .caixa-logo-header {
+    display: block;
+    margin: 0;
+  }
+
+  .header-menu {
+    display: none;
+    
+  }
+
+  .header-menu a {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  /* SESSÃO 1 */
+  .sessao01-h1 {
+    font-size: 40px;
+  }
+
+  .sessao01-h2 {
+    font-size: 25px;
+  }
+
+  .sessao01-p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .sessao01-button1,
+  .sessao01-button2 {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .card-sessao01 {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .sessao01 {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  /* SESSÃO 2 */
+  .sessao02 {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .sessao02-H2 {
+    font-size: 30px;
+  }
+
+  .card-sessao02 {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+  }
+
+  .card-sessao02-rodape {
+    width: 90%;
+    height: auto;
+  }
+
+  /* SESSÃO 3 */
+  .sessao03 {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .sessao03-h2 {
+    font-size: 30px;
+  }
+
+  .card-sessao03 {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+  }
+
+  .card-sessao03-rodape {
+    width: 90%;
+    height: auto;
+  }
+
+  /* SESSÃO 4 */
+  .sessao04 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .TEXTO {
+    width: 100%;
+    display: block;
+  }
+
+  .caixaML-sec04 {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .button-sec04 {
+    width: 90%;
+    height: auto;
+    
+  }
+
+  .atendimentoML {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  /* SESSÃO 5 */
+  .sessao05 {
+    height: auto;
+  }
+
+  .caixa_sec05 {
+    width: 95%;
+    height: auto;
+  }
+
+  .caixinha_esquerda_sec05,
+  .caixinha_mini_shope {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .button-shope-caixinha {
+    display: none;
+  }
+
+  .button-sec05 {
+    width: 90%;
+    height: auto;
+    display: none;
+  }
+
+  /* SESSÃO 6 */
+  .section_06 {
+    height: auto;
+  }
+
+  .img_loja_sec_06 {
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .caixinha_sec06 {
+    width: 90%;
+    margin: 20px auto;
+    display: none;
+  }
+
+  /* SESSÃO 7 */
+  .sessao07 {
+    height: auto;
+  }
+
+  .caixinha_sec_07 {
+    width: 90%;
+    display: block;
+    margin: 15px auto;
+  }
+
+  .iframe_sec_07 {
+    width: 90%;
+    height: 300px;
+  }
+
+  .sidecard_sec07 {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: none;
+  }
+
+  .mini_footer_sec07 {
+    height: 0px;
+  }
+
+  .minifooter_colunas {
+    display: none;
+  }
+
+  /* FOOTER */
+  footer {
+    height: auto;
+    padding: 20px;
+    display: none;
+  }
+
+  .caixas_footer {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .a_footer,
+  .H3_footer,
+  .P_footer {
+    text-align: center;
+  }
+}
